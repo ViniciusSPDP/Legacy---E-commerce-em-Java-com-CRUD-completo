@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+}
+
+/*Apagar dps*/
+/*body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}*/
+
+body{
+}
+
+
+
+.cartao{
+    position: relative;
+    width: 350px;
+    height: 190px;
+    /*height: 450px;*/
+    background: whitesmoke;
+    border-radius: 20px;
+    transition: 0.5s;
+
+}
+
+.cartao:hover{
+    height: 450px;
+}
+
+.imgBx{
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background: #FFF;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.cartao:hover .imgBx{
+    width: 250px;
+    height: 250px;
+}
+
+.cartao .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.cartao .content .detalhes{
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(150px);
+}
+
+.cartao:hover .content .detalhes{
+    transform: translateY(0px);
+}
+
+.cartao .content .detalhes h2{
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #555;
+    line-height: 1.2em;
+}
+
+.cartao .content .detalhes h2 span{
+    font-size: 0.75em;
+    font-weight: 500;
+    opacity: 0.5s;
+
+}
+
+.cartao .content .detalhes .data{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.cartao .content .detalhes .data h3{
+    font-size: 1em;
+    color: #555;
+    line-height: 1.2em;
+    font-weight: 600;
+}
+
+.cartao .content .detalhes .data h3 span{
+
+    font-size: 0.85em;
+    font-weight: 400;
+    opacity: 0.5;
+
+}
+
+.cartao .content .detalhes .acaoBotao{
+    display: flex;
+    justify-content: space-between;
+    /*gap: 20px;*/
+}
+
+.cartao .content .detalhes .acaoBotao button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 500;
+    background: #4ec3c0;
+    color: white;
+    cursor: pointer;
+}

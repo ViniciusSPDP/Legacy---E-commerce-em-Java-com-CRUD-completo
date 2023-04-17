@@ -1,0 +1,34 @@
+.form-control{
+    border: 0;
+    border-bottom: 2px solid #007bff;
+}
+
+.form-group input:valid~label,
+.form-group input:focus~label{
+    transform: translateY(-25px);
+    font-size: 13px;
+    color: #007bff;
+    pointer-events: none;
+
+}
+
+.form-group input:valid~.form-control,
+.form-group input:focus~.form-control{
+    border-bottom: 2px solid #007bff;
+    pointer-events: none;
+
+}
+
+.form-group label{
+    position: absolute;
+    bottom: 0px;
+    color: grey;
+    transition: 0.3s;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.form-group{
+    margin-bottom: 50px;
+}
+

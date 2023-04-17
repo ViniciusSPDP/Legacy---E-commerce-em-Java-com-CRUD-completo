@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(204,228,251);
+    background: linear-gradient(90deg, rgba(204,228,251,1) 0%, rgba(145,193,246,1) 35%, rgba(204,228,251,1) 100%);
+   
+}
+
+.box {
+    position: relative;
+    width: 460px;
+    height: 420px;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+.form {
+    position: absolute;
+    inset: 2px;
+    border-radius: 8px;
+    background: #ffffff;
+    z-index: 10;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form h2 {
+    color: #65AFFF;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form img{
+    width: 53px;
+    height: 49px;
+    margin-bottom: 10px;
+    margin-left: 42%;
+}
+
+.inputBox {
+    position: relative;
+    width: 360px;
+    margin-top: 35px;
+}
+
+.inputBox input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+    color: #23242a;
+    transform: translateX(0px) translateY(-34px);
+    font-size: 0.75em;
+}
+
+.inputBox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #65AFFF;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+
+
+.inputBox input:valid~i,
+.inputBox input:focus~i {
+    height: 44px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: #65AFFF;
+}
+
+input[type="submit"] {
+    border: none;
+    outline: none;
+    background: #65AFFF;
+    width: 100px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input[type="submit"]:active {
+    opacity: 0.8;
+}
+
